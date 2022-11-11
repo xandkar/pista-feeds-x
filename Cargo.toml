@@ -24,10 +24,6 @@ name = "pista-feed-backlight-laptop"
 path = "pista-feed-backlight-laptop.rs"
 
 [[bin]]
-name = "pista-feed-bluetooth"
-path = "pista-feed-bluetooth.rs"
-
-[[bin]]
 name = "pista-feed-disk"
 path = "pista-feed-disk.rs"
 
