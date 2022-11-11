@@ -97,3 +97,8 @@ reinstall:
 
 deps:
 	raco pkg install --deps search-auto
+
+.PHONY: lint
+lint:
+	cargo fmt --check
+	cargo clippy -- -W clippy::unwrap_used
