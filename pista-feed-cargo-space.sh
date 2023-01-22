@@ -5,6 +5,9 @@ DEFAULT_INTERVAL_SECONDS=$((60 * 60))
 total_cargo_build_space() {
     local -r dir="$1"
 
+    local cargo_toml_path
+    local target_path
+
     find "$dir" -type f -name Cargo.toml \
     | while read -r cargo_toml_path
     do
